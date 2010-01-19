@@ -1,0 +1,13 @@
+Imagine that you manage a t-shirt printing company.  Each morning you review 
+all orders placed the prior day and determine how long each order will take to 
+fulfill.  On any given day, only a certain number of your printing machines
+are operational.  Your job is to schedule each printing job with one of the 
+operational printing machines in such a manner that (a) all t-shirts are 
+printed in the least amount of time, and (b) that the distribution of work
+across machines is as fair as possible (i.e. the standard deviation of the
+time each machine spends working is minimized).
+
+Your objective is to write a FairDistribution class that satisfies the 
+following test cases.  The code in the test cases is sufficient to define the 
+methods you must implement.
+
