@@ -22,7 +22,7 @@ Note that test cases 2 and 4 define specific distributions against which you
 can verify.  Test cases 1 and 3 have more than one acceptable distribution
 and as such I have not provided a specific distribution to test against.
 
-Note also that there is a well known algorithm that provides that is much
-faster than a full solution that will pass all tests except for test case
-#3.  If you are only able to determine this particular solution, please 
+Note also that there is a well known algorithm that provides a much
+faster though suboptimaly solution.  It will pass all tests except for test 
+case #3.  If you are only able to determine this particular solution, please 
 still consider submitting your solution for consideration.
