@@ -11,13 +11,18 @@ Your objective is to write a FairDistribution class that satisfies the
 following test cases.  The code in the test cases is sufficient to define the 
 methods you must implement.
 
-Note that test cases 2 and 4 define specific distributions against which you 
-can verify.  Test cases 1 and 3 have more than one acceptable distribution
-and as such I have not provided a specific distribution to test against.
-
 This is an NP complete problem, and as such I have only provided very small
 datasets in the test cases.  Test case #3 takes the longest to solve and
 you may find it easier to comment it out early in your development phase.  
 On a MBP Pro with a 2.4 GHz dual core processor and 4GB RAM, it took
 just over 3 minutes to solve.  The other three test cases took only a 
 couple of seconds.
+
+Note that test cases 2 and 4 define specific distributions against which you 
+can verify.  Test cases 1 and 3 have more than one acceptable distribution
+and as such I have not provided a specific distribution to test against.
+
+Note also that there is a well known algorithm that provides that is much
+faster than a full solution that will pass all tests except for test case
+#3.  If you are only able to determine this particular solution, please 
+still consider submitting your solution for consideration.
