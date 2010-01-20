@@ -1,9 +1,25 @@
 require 'test/unit'
 require 'fair_distribution'
 
+# FairDistribution = SlowFairDistribution
+
 class FairQueueTest < Test::Unit::TestCase
-  
+
   def test_basic1
+    jobs              = [10, 15, 20, 24, 30, 45, 75]
+    number_of_presses = 2
+    
+    exp_max           = 110
+      
+    fd = FairDistribution.new(jobs, number_of_presses)
+    assert_equal exp_max, fd.time_required
+
+    # A Solution
+    #     [75, 20, 15],
+    #     [45, 30, 24, 10,]
+  end
+  
+  def test_basic2
     jobs              = [1.0, 4.75, 2.83, 1.1, 5.8, 3.5, 4.4]
     number_of_presses = 4
     
@@ -20,57 +36,23 @@ class FairQueueTest < Test::Unit::TestCase
     assert_distributions_are_equivalent exp_distribution, fd.distribution
   end
   
-  # def test_basic2
-  #   jobs              = [14.0, 0.23, 0.47, 0.73, 1.5, 3.0, 3.2, 1.75, 9.8, 6.1, 2.3, 4.2, 0.11, 0.27, 6.14, 1.09, 3.12]
-  #   number_of_presses = 5
-  #   
-  #   exp_max           = 14.0
-  #   exp_distribution  = [
-  #       [0.23, 1.09, 2.3, 3.2, 4.2],
-  #       [0.27, 1.5, 3.12, 6.1],
-  #       [0.11, 1.75, 3.0, 6.14],
-  #       [0.47, 0.73, 9.8],
-  #       [14.0]
-  #     ]
-  #     
-  #   fd = FairDistribution.new(jobs, number_of_presses)
-  #   assert_equal exp_max, fd.time_required
-  #   assert_distributions_are_equivalent exp_distribution, fd.distribution
-  # end
-  
   def test_basic3
-    jobs              = [10, 15, 20, 25, 30, 45, 75]
-    number_of_presses = 2
+    jobs              = [0.23, 0.47, 0.73, 1.5, 3.0, 3.2, 1.75, 2.3, 0.11, 0.27, 1.09]
+    number_of_presses = 4
     
-    exp_max           = 110
-    exp_distribution  = [
-        [75, 25, 10],
-        [45, 30, 20, 15]
-      ]
+    exp_max           = 3.73
       
     fd = FairDistribution.new(jobs, number_of_presses)
     assert_equal exp_max, fd.time_required
-    assert_distributions_are_equivalent exp_distribution, fd.distribution
+
+    # A Solution
+    #     [3.2, 0.47],
+    #     [3.0, 0.73],
+    #     [2.3, 1.09, 0.23],
+    #     [1.75, 1.5, 0.27, 0.11]
   end
   
-  # def test_basic4
-  #   jobs              = [0.5, 1.45, 0.32, 1.72, 0.89, 1.14, 2.35, 1.09, 0.87, 0.79, 0.14, 1.23, 1.24, 1.19, 0.44, 0.32, 1.14, 1.83, 0.45, 0.24, 1.52]
-  #   number_of_presses = 4
-  #   
-  #   exp_max           = 5.23
-  #   exp_distribution  = [
-  #       [2.35, 1.19, 0.89, 0.45, 0.32], 
-  #       [1.83, 1.23, 1.09, 0.5, 0.44, 0.14], 
-  #       [1.72, 1.24, 1.14, 0.87, 0.24], 
-  #       [1.52, 1.45, 1.14, 0.79, 0.32]
-  #     ]
-  #     
-  #   fd = FairDistribution.new(jobs, number_of_presses)
-  #   assert_equal exp_max, fd.time_required
-  #   assert_distributions_are_equivalent exp_distribution, fd.distribution
-  # end
-  
-  def test_basic5
+  def test_basic4
     jobs = [5,5,4,4,3,3,3]
     number_of_presses = 3
   

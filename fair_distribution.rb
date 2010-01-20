@@ -60,7 +60,7 @@ class FairDistribution
   def distribution
     args = (0..(@durations.size-1)).map {|i| (0..(@queues-1)).to_a}
     all_possible_distributions = cartesian_product(*args)
-    
+
     _min = @durations.sum
     _ret = nil
     
@@ -101,6 +101,53 @@ class FairDistribution
         end
       end
       result
+    end
+    
+    def max_sum(a_distribution)
+      a_distribution.map{|q| q.sum}.max
+    end
+end
+
+class LowMemoryFairDistribution
+  def initialize(durations, queues)
+    @durations = durations
+    @queues    = queues
+  end
+  
+  def distribution
+    _min = @durations.sum
+    _ret = nil
+    
+    each_cartesian_product do |distribution_by_queue_num|
+      this_dist = translate_distribution_by_queue_num(distribution_by_queue_num)
+      this_max = max_sum(this_dist)
+      if this_max < _min
+        _min = this_max
+        _ret = this_dist
+      end
+    end
+    _ret
+  end
+  
+  def time_required
+    max_sum(distribution)
+  end
+  
+  private
+    def translate_distribution_by_queue_num(distribution_by_queue_num)
+      this_dist = Array.new(@queues) {[]}
+      distribution_by_queue_num.each_with_index do |queue_index, job_index|
+        this_dist[queue_index] << @durations[job_index]
+      end
+      this_dist
+    end
+    
+    def each_cartesian_product(&block)
+      number_of_solutions = @queues**(@durations.size)
+      (0..(number_of_solutions - 1)).each do |sln_number|
+        distribution = sln_number.to_s(@queues).rjust(@durations.size, "0").split("").map {|ch| ch.to_i}
+        yield(distribution)
+      end
     end
     
     def max_sum(a_distribution)
