@@ -143,7 +143,7 @@ class LowMemoryFairDistribution
     
     def each_distribution(&block)
       each_cartesian_product do |dist|
-        yield(translate_distribution_by_queue_num(distribution_by_queue_num))
+        yield(translate_distribution_by_queue_num(dist))
       end
     end
     
