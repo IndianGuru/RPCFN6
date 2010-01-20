@@ -118,12 +118,11 @@ class LowMemoryFairDistribution
     _min = @durations.sum
     _ret = nil
     
-    each_cartesian_product do |distribution_by_queue_num|
-      this_dist = translate_distribution_by_queue_num(distribution_by_queue_num)
-      this_max = max_sum(this_dist)
+    each_distribution do |dist|
+      this_max = max_sum(dist)
       if this_max < _min
         _min = this_max
-        _ret = this_dist
+        _ret = dist
       end
     end
     _ret
@@ -140,6 +139,12 @@ class LowMemoryFairDistribution
         this_dist[queue_index] << @durations[job_index]
       end
       this_dist
+    end
+    
+    def each_distribution(&block)
+      each_cartesian_product do |dist|
+        yield(translate_distribution_by_queue_num(dist))
+      end
     end
     
     def each_cartesian_product(&block)
