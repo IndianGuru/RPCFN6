@@ -1,0 +1,23 @@
+Imagine that you manage a t-shirt printing company.  Each morning you review 
+all orders placed the prior day and determine how long each order will take to 
+fulfill.  On any given day, only a certain number of your printing machines
+are operational.  Your job is to schedule each printing job with one of the 
+operational printing machines in such a manner that (a) all t-shirts are 
+printed in the least amount of time, and (b) the distribution of work across 
+machines is as fair as possible (i.e. the standard deviation of the time each 
+machine spends working is minimized).
+
+Your objective is to write a FairDistribution class that satisfies the 
+following test cases.  The code in the test cases is sufficient to define the 
+methods you must implement.
+
+Note that test cases 2 and 4 define specific distributions against which you 
+can verify.  Test cases 1 and 3 have more than one acceptable distribution
+and as such I have not provided a specific distribution to test against.
+
+This is an NP complete problem, and as such I have only provided very small
+datasets in the test cases.  Test case #3 takes the longest to solve and
+you may find it easier to comment it out early in your development phase.  
+On a MBP Pro with a 2.4 GHz dual core processor and 4GB RAM, it took
+just over 3 minutes to solve.  The other three test cases took only a 
+couple of seconds.
