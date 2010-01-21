@@ -62,14 +62,21 @@ class FairDistribution
     all_possible_distributions = cartesian_product(*args)
 
     _min = @durations.sum
+    _sd  = -1
     _ret = nil
     
     all_possible_distributions.each do |distribution_by_queue_num|
       this_dist = translate_distribution_by_queue_num(distribution_by_queue_num)
-      this_max = max_sum(this_dist)
+      this_max  = max_sum(this_dist)
+      this_sd   = stdev(this_dist)
+      if this_max == _min && this_sd < _sd
+        _ret  = this_dist
+        _sd   = this_sd
+      end
       if this_max < _min
         _min = this_max
         _ret = this_dist
+        _sd  = this_sd
       end
     end
     _ret
@@ -105,6 +112,13 @@ class FairDistribution
     
     def max_sum(a_distribution)
       a_distribution.map{|q| q.sum}.max
+    end
+    
+    def stdev(a_distribution)
+      sums = a_distribution.map{|q| q.sum}
+      count = sums.size
+      mean = sums.sum / count.to_f
+      stddev = Math.sqrt( sums.inject(0) { |sum, e| sum + (e - mean) ** 2 } / count.to_f )
     end
 end
 

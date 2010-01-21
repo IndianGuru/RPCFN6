@@ -1,7 +1,7 @@
 require 'test/unit'
 require 'fair_distribution'
 
-# FairDistribution = SlowFairDistribution
+#FairDistribution = LowMemoryFairDistribution
 
 class FairQueueTest < Test::Unit::TestCase
 
@@ -44,7 +44,7 @@ class FairQueueTest < Test::Unit::TestCase
       
     fd = FairDistribution.new(jobs, number_of_presses)
     assert_equal exp_max, fd.time_required
-
+  
     # A Solution
     #     [3.2, 0.47],
     #     [3.0, 0.73],
@@ -66,7 +66,13 @@ class FairQueueTest < Test::Unit::TestCase
     assert_equal exp_max, fd.time_required
     assert_distributions_are_equivalent exp_distribution, fd.distribution
   end
-  
+
+  def test_basic5
+    fd = FairDistribution.new([0.23, 0.47, 0.73, 1.5, 3.0, 3.2], 4)
+    assert_equal 3.2, fd.time_required
+    assert_distributions_are_equivalent [[3.0], [3.2], [0.23, 0.47, 0.73], [1.5]], fd.distribution
+  end
+    
   # Testing Implementation
   # def test_arrays_have_same_elements
   #   assert arrays_have_same_elements?([1,2,3], [3,1,2])
