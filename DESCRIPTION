@@ -12,11 +12,11 @@ following test cases.  The code in the test cases is sufficient to define the
 methods you must implement.
 
 This is an NP complete problem, and as such I have only provided very small
-datasets in the test cases.  Test case #3 takes the longest to solve and
-you may find it easier to comment it out early in your development phase.  
-On a MBP Pro with a 2.4 GHz dual core processor and 4GB RAM, it took
-just over 3 minutes to solve.  The other four test cases took only a 
-couple of seconds.
+datasets in the test cases.  Test case #3 takes the longest to solve (See 
+**Notes below about how to run the Test Case #3) and you may find it easier
+to comment it out early in your development phase.  On a MBP Pro with a 2.4
+GHz dual core processor and 4GB RAM, it took just over 3 minutes to solve. 
+The other three test cases took only a couple of seconds.
 
 Note that test cases 2 and 4 define specific distributions against which you 
 can verify.  Test cases 1 and 3 have more than one acceptable distribution
@@ -26,3 +26,13 @@ Note also that there is a well known algorithm that provides a much
 faster though not optimal solution.  It will pass all tests except for test 
 case #3.  If you are only able to determine this particular solution, please 
 still consider submitting your solution for consideration.
+
+** Notes:
+To accommodate the fact that Test Case #3 takes a long time to run, you
+can run the test normally, and TC#3 will not run.  When you want the TC#3
+to run, then you can run the following:
+
+	ruby test_solution_acceptance.rb full
+
+The word "full" will signal it to run all the test cases.
+
