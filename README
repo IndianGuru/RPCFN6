@@ -5,3 +5,16 @@ clusion of the individual challenges.
 
 This README should be updated/changed upon doing so, to reflect the challenge, 
 sponsor, winner, and other relevant news.
+
+
+Unit test
+---------
+
+C:\RPCFN6> ruby test_solution_acceptance.rb 99_ashbb full > 99_ashbb/result.txt
+
+C:\RPCFN6> cd 99_ashbb
+
+C:\RPCFN6\99_ashbb> ls -l
+total 1
+-rw-r--r--    1 asa      Administ      986 Jan 26 22:12 fair_distribution.rb
+-rw-r--r--    1 asa      Administ      393 Jan 26 22:15 result.txt

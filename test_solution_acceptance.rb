@@ -1,5 +1,5 @@
 require 'test/unit'
-require 'fair_distribution'
+require "#{ARGV[0]}/fair_distribution"  # edited by ashbb
 
 #FairDistribution = LowMemoryFairDistribution
 
@@ -50,7 +50,7 @@ class FairQueueTest < Test::Unit::TestCase
     #     [3.0, 0.73],
     #     [2.3, 1.09, 0.23],
     #     [1.75, 1.5, 0.27, 0.11]
-  end if ARGV[0] == "full" # only use this TC if 'full' is added as an argument.
+  end if ARGV[1] == "full" # only use this TC if 'full' is added as an argument.
   
   def test_basic4
     jobs = [5,5,4,4,3,3,3]
