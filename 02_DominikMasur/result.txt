@@ -1,0 +1,6 @@
+Loaded suite test_solution_acceptance
+Started
+.....
+Finished in 0.000000 seconds.
+
+5 tests, 8 assertions, 0 failures, 0 errors, 0 skips
