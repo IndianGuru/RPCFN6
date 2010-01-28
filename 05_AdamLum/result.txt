@@ -1,0 +1,38 @@
+Loaded suite test_solution_acceptance
+Started
+.EE..
+Finished in 27.328125 seconds.
+
+  1) Error:
+test_basic2(FairQueueTest):
+TypeError: can't convert false into Integer
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:161:in `[]'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:161:in `block in subset_sum'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:160:in `each'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:160:in `subset_sum'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:49:in `block in partition_set'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:48:in `each'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:48:in `partition_set'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:134:in `block in calculate'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:129:in `each'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:129:in `calculate'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:22:in `time_required'
+    test_solution_acceptance.rb:35:in `test_basic2'
+
+  2) Error:
+test_basic3(FairQueueTest):
+TypeError: can't convert false into Integer
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:161:in `[]'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:161:in `block in subset_sum'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:160:in `each'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:160:in `subset_sum'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:49:in `block in partition_set'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:48:in `each'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:48:in `partition_set'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:134:in `block in calculate'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:129:in `each'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:129:in `calculate'
+    C:/rubyprograms/RPCFN/John_Trupiano/RPCFN6/05_AdamLum/fair_distribution.rb:22:in `time_required'
+    test_solution_acceptance.rb:46:in `test_basic3'
+
+5 tests, 5 assertions, 0 failures, 2 errors, 0 skips

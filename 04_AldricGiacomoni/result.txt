@@ -1,0 +1,16 @@
+Loaded suite test_solution_acceptance
+Started
+
+.
+.
+.
+F
+.
+Finished in 0.125000 seconds.
+
+  1) Failure:
+test_basic4(FairQueueTest) [test_solution_acceptance.rb:66]:
+<9> expected but was
+<11>.
+
+5 tests, 7 assertions, 1 failures, 0 errors, 0 skips
