@@ -18,3 +18,10 @@ C:\RPCFN6\99_ashbb> ls -l
 total 1
 -rw-r--r--    1 asa      Administ      986 Jan 26 22:12 fair_distribution.rb
 -rw-r--r--    1 asa      Administ      393 Jan 26 22:15 result.txt
+
+Change Log
+----------
+The argument to the test solution is no longer case sensitive.
+Tests were run against ruby 1.9.1 and ruby 1.8.6 as well as 1.8.7
+Full tests have the tag "***** FULL TEST REQUESTED *****" in the result file.
+

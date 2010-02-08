@@ -1,6 +1,79 @@
+
+[32m<i>[m(B ruby-1.8.6-p399: ruby 1.8.6 (2010-02-05 patchlevel 399) [i686-linux]  [32m</i> [m(B 
+
+Loaded suite test_solution_acceptance
+Started
+EEEE
+Finished in 0.305593 seconds.
+
+  1) Error:
+test_basic1(FairQueueTest):
+LocalJumpError: no block given
+    ./06_BradOConnor//fair_distribution.rb:65:in `each'
+    ./06_BradOConnor//fair_distribution.rb:65:in `inject'
+    ./06_BradOConnor//fair_distribution.rb:65:in `make_array_of_times'
+    ./06_BradOConnor//fair_distribution.rb:64:in `each'
+    ./06_BradOConnor//fair_distribution.rb:64:in `make_array_of_times'
+    ./06_BradOConnor//fair_distribution.rb:62:in `each'
+    ./06_BradOConnor//fair_distribution.rb:62:in `make_array_of_times'
+    ./06_BradOConnor//fair_distribution.rb:8:in `time_required'
+    test_solution_acceptance.rb:21:in `test_basic1'
+
+  2) Error:
+test_basic2(FairQueueTest):
+LocalJumpError: no block given
+    ./06_BradOConnor//fair_distribution.rb:65:in `each'
+    ./06_BradOConnor//fair_distribution.rb:65:in `inject'
+    ./06_BradOConnor//fair_distribution.rb:65:in `make_array_of_times'
+    ./06_BradOConnor//fair_distribution.rb:64:in `each'
+    ./06_BradOConnor//fair_distribution.rb:64:in `make_array_of_times'
+    ./06_BradOConnor//fair_distribution.rb:62:in `each'
+    ./06_BradOConnor//fair_distribution.rb:62:in `make_array_of_times'
+    ./06_BradOConnor//fair_distribution.rb:8:in `time_required'
+    test_solution_acceptance.rb:41:in `test_basic2'
+
+  3) Error:
+test_basic4(FairQueueTest):
+LocalJumpError: no block given
+    ./06_BradOConnor//fair_distribution.rb:65:in `each'
+    ./06_BradOConnor//fair_distribution.rb:65:in `inject'
+    ./06_BradOConnor//fair_distribution.rb:65:in `make_array_of_times'
+    ./06_BradOConnor//fair_distribution.rb:64:in `each'
+    ./06_BradOConnor//fair_distribution.rb:64:in `make_array_of_times'
+    ./06_BradOConnor//fair_distribution.rb:62:in `each'
+    ./06_BradOConnor//fair_distribution.rb:62:in `make_array_of_times'
+    ./06_BradOConnor//fair_distribution.rb:8:in `time_required'
+    test_solution_acceptance.rb:72:in `test_basic4'
+
+  4) Error:
+test_basic5(FairQueueTest):
+LocalJumpError: no block given
+    ./06_BradOConnor//fair_distribution.rb:65:in `each'
+    ./06_BradOConnor//fair_distribution.rb:65:in `inject'
+    ./06_BradOConnor//fair_distribution.rb:65:in `make_array_of_times'
+    ./06_BradOConnor//fair_distribution.rb:64:in `each'
+    ./06_BradOConnor//fair_distribution.rb:64:in `make_array_of_times'
+    ./06_BradOConnor//fair_distribution.rb:62:in `each'
+    ./06_BradOConnor//fair_distribution.rb:62:in `make_array_of_times'
+    ./06_BradOConnor//fair_distribution.rb:8:in `time_required'
+    test_solution_acceptance.rb:78:in `test_basic5'
+
+4 tests, 0 assertions, 0 failures, 4 errors
+
+[32m<i>[m(B ruby-1.8.7-p249: ruby 1.8.7 (2010-01-10 patchlevel 249) [i686-linux]  [32m</i> [m(B 
+
 Loaded suite test_solution_acceptance
 Started
 ....
-Finished in 0.828125 seconds.
+Finished in 0.771011 seconds.
+
+4 tests, 7 assertions, 0 failures, 0 errors
+
+[32m<i>[m(B ruby-1.9.1-p378: ruby 1.9.1p378 (2010-01-10 revision 26273) [i686-linux]  [32m</i> [m(B 
+
+Loaded suite test_solution_acceptance
+Started
+....
+Finished in 0.437232 seconds.
 
 4 tests, 7 assertions, 0 failures, 0 errors, 0 skips

@@ -1,16 +1,95 @@
+
+[32mruby-1.8.6-p399: ruby 1.8.6 (2010-02-05 patchlevel 399) [i686-linux] [m(B
+
+***** FULL TEST REQUESTED *****
+Loaded suite test_solution_acceptance
+Started
+EEEEE
+Finished in 0.001094 seconds.
+
+  1) Error:
+test_basic1(FairQueueTest):
+LocalJumpError: no block given
+    ./99_ashbb//fair_distribution.rb:7:in `each'
+    ./99_ashbb//fair_distribution.rb:7:in `inject'
+    ./99_ashbb//fair_distribution.rb:7:in `initialize'
+    test_solution_acceptance.rb:20:in `new'
+    test_solution_acceptance.rb:20:in `test_basic1'
+
+  2) Error:
+test_basic2(FairQueueTest):
+LocalJumpError: no block given
+    ./99_ashbb//fair_distribution.rb:7:in `each'
+    ./99_ashbb//fair_distribution.rb:7:in `inject'
+    ./99_ashbb//fair_distribution.rb:7:in `initialize'
+    test_solution_acceptance.rb:40:in `new'
+    test_solution_acceptance.rb:40:in `test_basic2'
+
+  3) Error:
+test_basic3(FairQueueTest):
+LocalJumpError: no block given
+    ./99_ashbb//fair_distribution.rb:7:in `each'
+    ./99_ashbb//fair_distribution.rb:7:in `inject'
+    ./99_ashbb//fair_distribution.rb:7:in `initialize'
+    test_solution_acceptance.rb:51:in `new'
+    test_solution_acceptance.rb:51:in `test_basic3'
+
+  4) Error:
+test_basic4(FairQueueTest):
+LocalJumpError: no block given
+    ./99_ashbb//fair_distribution.rb:7:in `each'
+    ./99_ashbb//fair_distribution.rb:7:in `inject'
+    ./99_ashbb//fair_distribution.rb:7:in `initialize'
+    test_solution_acceptance.rb:71:in `new'
+    test_solution_acceptance.rb:71:in `test_basic4'
+
+  5) Error:
+test_basic5(FairQueueTest):
+LocalJumpError: no block given
+    ./99_ashbb//fair_distribution.rb:7:in `each'
+    ./99_ashbb//fair_distribution.rb:7:in `inject'
+    ./99_ashbb//fair_distribution.rb:7:in `initialize'
+    test_solution_acceptance.rb:77:in `new'
+    test_solution_acceptance.rb:77:in `test_basic5'
+
+5 tests, 0 assertions, 0 failures, 5 errors
+
+[32mruby-1.8.7-p249: ruby 1.8.7 (2010-01-10 patchlevel 249) [i686-linux] [m(B
+
+***** FULL TEST REQUESTED *****
 Loaded suite test_solution_acceptance
 Started
 110
 [[10, 24, 30, 45], [15, 20, 75]]
 .6.33
-[[5.8], [1.1, 4.4], [2.83, 3.5], [1.0, 4.75]]
+[[5.8], [1.1, 4.4], [1.0, 4.75], [2.83, 3.5]]
 .3.73
-[[0.23, 2.3, 1.09], [1.5, 1.75, 0.11, 0.27], [0.73, 3.0], [0.47, 3.2]]
+[[0.23, 2.3, 1.09], [0.73, 3.0], [0.47, 3.2], [1.5, 1.75, 0.11, 0.27]]
+.9
+[[5, 4], [3, 3, 3], [5, 4]]
+.3.2
+[[3.2], [0.23, 0.47, 0.73], [1.5], [3.0]]
+.
+Finished in 24.481025 seconds.
+
+5 tests, 8 assertions, 0 failures, 0 errors
+
+[32mruby-1.9.1-p378: ruby 1.9.1p378 (2010-01-10 revision 26273) [i686-linux] [m(B
+
+***** FULL TEST REQUESTED *****
+Loaded suite test_solution_acceptance
+Started
+110
+[[15, 20, 30, 45], [10, 24, 75]]
+.6.33
+[[2.83, 3.5], [1.1, 4.4], [5.8], [1.0, 4.75]]
+.3.73
+[[0.23, 2.3, 1.09], [0.47, 3.2], [1.5, 1.75, 0.11, 0.27], [0.73, 3.0]]
 .9
 [[3, 3, 3], [5, 4], [5, 4]]
 .3.2
-[[0.23, 0.47, 0.73], [1.5], [3.0], [3.2]]
+[[3.2], [0.23, 0.47, 0.73], [3.0], [1.5]]
 .
-Finished in 18.187500 seconds.
+Finished in 14.348876 seconds.
 
 5 tests, 8 assertions, 0 failures, 0 errors, 0 skips
