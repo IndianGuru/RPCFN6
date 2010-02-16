@@ -1,0 +1,48 @@
+***** FULL TEST REQUESTED *****
+Loaded suite test_solution_acceptance
+Started
+..E..
+Finished in 19.077432 seconds.
+
+  1) Error:
+test_basic3(FairQueueTest):
+Interrupt: 
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:100:in `block (2 levels) in distribute_jobs'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:100:in `each'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:100:in `inject'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:100:in `block in distribute_jobs'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:100:in `sort'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:100:in `distribute_jobs'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:130:in `block in distribute_jobs'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `each'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `each_with_index'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `distribute_jobs'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:130:in `block in distribute_jobs'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `each'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `each_with_index'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `distribute_jobs'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:131:in `block in distribute_jobs'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `each'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `each_with_index'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `distribute_jobs'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:130:in `block in distribute_jobs'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `each'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `each_with_index'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `distribute_jobs'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:131:in `block in distribute_jobs'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `each'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `each_with_index'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `distribute_jobs'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:130:in `block in distribute_jobs'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `each'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `each_with_index'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `distribute_jobs'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:130:in `block in distribute_jobs'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `each'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `each_with_index'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:114:in `distribute_jobs'
+    D:/work/ruby/RPCFN/JohnTrupiano/RPCFN6/13_AurelienBottazzini/fair_distribution.rb:58:in `initialize'
+    test_solution_acceptance.rb:51:in `new'
+    test_solution_acceptance.rb:51:in `test_basic3'
+
+5 tests, 7 assertions, 0 failures, 1 errors, 0 skips

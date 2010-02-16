@@ -1,0 +1,106 @@
+***** FULL TEST REQUESTED *****
+Loaded suite test_solution_acceptance
+Started
+Maximum machine completion time after initial allocation of jobs = 119.
+Maximum machine completion time after completion of heuristic
+that reallocates and swaps jobs among machines = 110.
+
+Maximum machine completion time after searching tree = 110
+Variance of job completion times for optimal solution = 0.25
+Machines->[jobs] 
+Machine 0->[1 2 6] time = 110.0
+Machine 1->[0 3 4 5] time = 109.0
+
+Branches visited = 11, end nodes visited = 3
+Total end nodes = 64, fraction visited = 0.046875
+Reductions in maximum machine completion time = 0
+Comparisons of machine completion time variances = 2
+Reductions in machine completion time variance = 0
+
+.Maximum machine completion time after initial allocation of jobs = 6.33.
+Maximum machine completion time after completion of heuristic
+that reallocates and swaps jobs among machines = 6.33.
+
+Maximum machine completion time after searching tree = 6.33
+Variance of job completion times for optimal solution = 0.0913249999999906
+Machines->[jobs] 
+Machine 0->[4] time = 5.8
+Machine 1->[0 1] time = 5.75
+Machine 2->[3 6] time = 5.5
+Machine 3->[2 5] time = 6.33
+
+Branches visited = 6, end nodes visited = 2
+Total end nodes = 1536, fraction visited = 0.00130208333333333
+Reductions in maximum machine completion time = 0
+Comparisons of machine completion time variances = 2
+Reductions in machine completion time variance = 0
+
+FMaximum machine completion time after initial allocation of jobs = 3.96.
+Maximum machine completion time after completion of heuristic
+that reallocates and swaps jobs among machines = 3.73.
+
+Maximum machine completion time after searching tree = 3.73
+Variance of job completion times for optimal solution = 0.00186874999999631
+Machines->[jobs] 
+Machine 0->[1 5] time = 3.67
+Machine 1->[2 4] time = 3.73
+Machine 2->[0 7 10] time = 3.62
+Machine 3->[3 6 8 9] time = 3.63
+
+Branches visited = 14, end nodes visited = 5
+Total end nodes = 393216, fraction visited = 1.27156575520833e-05
+Reductions in maximum machine completion time = 0
+Comparisons of machine completion time variances = 5
+Reductions in machine completion time variance = 2
+
+.Maximum machine completion time after initial allocation of jobs = 11.
+Maximum machine completion time after completion of heuristic
+that reallocates and swaps jobs among machines = 9.
+
+Maximum machine completion time after searching tree = 9
+Variance of job completion times for optimal solution = 0.0
+Machines->[jobs] 
+Machine 0->[4 5 6] time = 9.0
+Machine 1->[0 3] time = 9.0
+Machine 2->[1 2] time = 9.0
+
+Branches visited = 25, end nodes visited = 12
+Total end nodes = 486, fraction visited = 0.0246913580246914
+Reductions in maximum machine completion time = 0
+Comparisons of machine completion time variances = 2
+Reductions in machine completion time variance = 0
+
+FMaximum machine completion time after initial allocation of jobs = 3.2.
+Maximum machine completion time after completion of heuristic
+that reallocates and swaps jobs among machines = 3.2.
+
+Maximum machine completion time after searching tree = 3.2
+Variance of job completion times for optimal solution = 0.673918750000001
+Machines->[jobs] 
+Machine 0->[5] time = 3.2
+Machine 1->[4] time = 3.0
+Machine 2->[3] time = 1.5
+Machine 3->[0 1 2] time = 1.43
+
+Branches visited = 6, end nodes visited = 4
+Total end nodes = 384, fraction visited = 0.0104166666666667
+Reductions in maximum machine completion time = 0
+Comparisons of machine completion time variances = 4
+Reductions in machine completion time variance = 1
+
+F
+Finished in 0.000000 seconds.
+
+  1) Failure:
+test_basic2(FairQueueTest) [test_solution_acceptance.rb:42]:
+Distributions not equivalent: : [[1.0, 4.75], [2.83, 3.5], [1.1, 4.4], [5.8]] not equivalent to [[4], [0, 1], [3, 6], [2, 5]]
+
+  2) Failure:
+test_basic4(FairQueueTest) [test_solution_acceptance.rb:73]:
+Distributions not equivalent: : [[5, 4], [5, 4], [3, 3, 3]] not equivalent to [[4, 5, 6], [0, 3], [1, 2]]
+
+  3) Failure:
+test_basic5(FairQueueTest) [test_solution_acceptance.rb:79]:
+Distributions not equivalent: : [[3.0], [3.2], [0.23, 0.47, 0.73], [1.5]] not equivalent to [[5], [4], [3], [0, 1, 2]]
+
+5 tests, 8 assertions, 3 failures, 0 errors, 0 skips
