@@ -1,0 +1,27 @@
+STDOUT.sync = true
+
+desc 'Default will run short_test'
+task :default => :test_short do
+  puts "Tests ran."
+end
+
+desc 'test_short'
+task :test_short do
+test_file = Dir.glob("test_*.rb")[0] + " "
+submissions = Dir.glob("[0-9][0-9]*").sort!
+  submissions.each do |submission|
+    puts "#{"=" * 15} Testing #{submission}#{"=" * 15}\n" 
+    system("ruby " << test_file << " " << submission) 
+  end
+end
+
+desc 'test_full'
+task :test_full do
+  test_file = Dir.glob("test_*.rb")[0] + " "
+  submissions = Dir.glob("[0-9][0-9]*").sort!
+  submissions.each do |submission|
+    puts "#{"=" * 15} Testing #{submission}#{"=" * 15}\n" 
+    system("ruby " << test_file << " " << submission << ' full') 
+  end
+end
+
