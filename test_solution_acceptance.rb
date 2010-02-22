@@ -1,5 +1,6 @@
 require 'test/unit'
-require "#{ARGV[0]}/fair_distribution"  # edited by ashbb
+require 'fair_distribution'
+# require "#{ARGV[0]}/fair_distribution"  # edited by ashbb
 
 
 if ARGV[1].to_s.downcase == 'full' 
@@ -77,6 +78,33 @@ class FairQueueTest < Test::Unit::TestCase
     fd = FairDistribution.new([0.23, 0.47, 0.73, 1.5, 3.0, 3.2], 4)
     assert_equal 3.2, fd.time_required
     assert_distributions_are_equivalent [[3.0], [3.2], [0.23, 0.47, 0.73], [1.5]], fd.distribution
+  end
+  
+  def test_hidden1
+    jobs = [2,4,3,2,5,4,3,2,3,4]
+    number_of_presses = 5
+    
+    exp_max = 9
+    fd = FairDistribution.new(jobs, number_of_presses)
+    assert_equal exp_max, fd.time_required
+  end
+  
+  def test_hidden2
+    jobs = [5,4,3,5,6,4,5,4,3,5,4,3]
+    number_of_presses = 4
+    
+    exp_max = 9
+    fd = FairDistribution.new(jobs, number_of_presses)
+    assert_equal exp_max, fd.time_required
+  end
+  
+  def test_hidden3
+    jobs = [9,4,5,7,6,5,7,6,5,6,7,5]
+    number_of_presses = 6
+    
+    exp_max = 9
+    fd = FairDistribution.new(jobs, number_of_presses)
+    assert_equal exp_max, fd.time_required
   end
     
   # Testing Implementation
